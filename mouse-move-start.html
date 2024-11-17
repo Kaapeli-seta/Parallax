@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="mouse.js" defer></script>
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+
+        font-family: "Courier New", Courier, monospace;
+        position: relative;
+      }
+      header {
+        height: 80px;
+        font-size: 2.5rem;
+        text-align: center;
+        position: fixed;
+        color: white;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(111, 111, 111);
+        z-index: 20;
+      }
+      main,
+      section {
+        padding: 40px;
+        color: white;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+        background-color: rgb(33, 31, 31);
+        z-index: 5;
+      }
+      .progress-container {
+        width: 100%;
+        height: 8px;
+        background: lightcyan;
+        position: fixed;
+        top: 80px;
+        z-index: 20;
+      }
+      .progress-bar {
+        height: 8px;
+        background: lightgreen;
+        width: 0%;
+      }
+      #spaceI {
+        width: 100%;
+        height: calc(80vh - 30px);
+        overflow: hidden;
+        background: url(img/ISS-40.jpg) no-repeat center center;
+        background-size: cover;
+        position: relative;
+      }
+      .layer1 {
+        width: 300px;
+        height: 300px;
+        background-color: lime;
+        position: absolute;
+        background: url(img/astronaut.png) no-repeat;
+        top: 30%;
+        left: 5%;
+        z-index: 20;
+      }
+      .layer2 {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        background-image: url(img/shuttle.png);
+        top: 30%;
+        left: 50%;
+        z-index: 10;
+      }
+      #mouse {
+        border: solid black;
+        background-color: aliceblue;
+        position: relative;
+        top: 150px;
+        left: 70%;
+        z-index: 30;
+      }
+
+      #mouse-center {
+        border: solid black;
+        background-color: aliceblue;
+        position: relative;
+        top: 180px;
+        left: 70%;
+        z-index: 30;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Parallax demo</header>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+    <!--space human-->
+    <div id="spaceI">
+      <div class="layer1"></div>
+      <div class="layer2"></div>
+      <div id="mouse"></div>
+      <div id="mouse-center">asdas</div>
+    </div>
+
+    <main>
+      <h1>Otsikko</h1>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+        doloremque necessitatibus ut incidunt, pariatur error quaerat dolorem
+        numquam totam quasi corrupti aliquid delectus rerum facere, eveniet eum
+        nam! Nisi, reiciendis. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Dolore magni asperiores, eius, quae consectetur
+        voluptas in tenetur voluptatem reprehenderit ipsum voluptatum nemo
+        voluptate amet corporis ratione dolor vitae quis cupiditate! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Esse accusantium dolorum
+        fuga voluptate odio quae suscipit, sit soluta autem eligendi unde
+        eveniet iste nesciunt ad ut magni? Omnis, ipsum hic.
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scroll.js" defer></script>
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+
+        font-family: "Courier New", Courier, monospace;
+        position: relative;
+      }
+      header {
+        font-size: 2.5rem;
+        text-align: center;
+        position: fixed;
+        color: white;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(111, 111, 111);
+        z-index: 20;
+      }
+      main,
+      section {
+        padding: 40px;
+        color: white;
+        position: relative;
+        color: white;
+        font-size: 1.5rem;
+        background-color: rgb(33, 31, 31);
+        z-index: 5;
+      }
+
+      #hero {
+        background-color: rgb(56, 53, 47);
+        height: 900px;
+      }
+      #taustascroll {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+        background-color: rgb(94, 100, 70);
+        z-index: 10;
+        background-image: url(img/Wood-512x512.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .layer {
+        height: inherit;
+        width: 100%;
+        background-size: cover;
+        background-position: bottom center;
+        position: fixed;
+        background-repeat: no-repeat;
+      }
+      .layer1 {
+        background-image: url(img/ilu_01.jpg);
+      }
+      .layer2 {
+        background-image: url(img/ilu_02.png);
+      }
+      .layer3 {
+        background-image: url(img/ilu_03.png);
+      }
+      .layer4 {
+        background-image: url(img/ilu_04.png);
+        background-size: 500px;
+        background-position: bottom right;
+      }
+      .layer5 {
+        background-image: url(img/ilu_05.png);
+      }
+      .layer6 {
+        background-image: url(img/ilu_06.png);
+      }
+    </style>
+  </head>
+  <body>
+    <header>Parallax demo</header>
+    <div id="hero">
+      <div class="layer layer1" data-type="parallax" data-speed="5"></div>
+      <div class="layer layer2" data-type="parallax" data-speed="15"></div>
+      <div class="layer layer3" data-type="parallax" data-speed="30"></div>
+      <div class="layer layer4" data-type="parallax" data-speed="50"></div>
+      <div class="layer layer5" data-type="parallax" data-speed="80"></div>
+      <div class="layer layer6" data-type="parallax" data-speed="100"></div>
+    </div>
+    <main>
+      <h1>Otsikko</h1>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+        doloremque necessitatibus ut incidunt, pariatur error quaerat dolorem
+        numquam totam quasi corrupti aliquid delectus rerum facere, eveniet eum
+        nam! Nisi, reiciendis. Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Dolore magni asperiores, eius, quae consectetur
+        voluptas in tenetur voluptatem reprehenderit ipsum voluptatum nemo
+        voluptate amet corporis ratione dolor vitae quis cupiditate! Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Esse accusantium dolorum
+        fuga voluptate odio quae suscipit, sit soluta autem eligendi unde
+        eveniet iste nesciunt ad ut magni? Omnis, ipsum hic.
+      </div>
+    </main>
+    <div id="taustascroll"></div>
+    <section>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nam
+        dolores at est excepturi, itaque voluptates. Nam cum impedit fuga at
+        quam obcaecati aspernatur vero. Illum aperiam officiis explicabo qui!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius atque
+        optio, quia impedit exercitationem itaque alias eaque sapiente nostrum
+        minima beatae esse accusamus odit incidunt magnam debitis expedita
+        dolorum similique! Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Autem hic omnis totam vel facere laudantium id, recusandae
+        aspernatur quaerat ex quia, rerum tempore quis reprehenderit quisquam
+        eum dolorum quae inventore. Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Laborum ut suscipit aperiam illo, nemo, provident
+        dolor reprehenderit, quod alias cumque corporis quia incidunt maiores
+        dolorem qui nulla delectus. Quos, adipisci!
+      </div>
+    </section>
+  </body>
+</html>
